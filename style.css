@@ -1,1 +1,112 @@
-
+/* Project 2 - style.css (shared by all three pages) */
+ 
+/* Style 1: page background color and font */
+body {
+  background-color: #bcd4e6;
+  font-family: Georgia, serif;
+}
+ 
+/* Fixed layout: Resume page uses a pixel width */
+#page-wrapper {
+  width: 960px;
+  margin: 2em auto 0;
+}
+ 
+/* Fluid layout: Home and Volleyball pages use a percent width */
+#fluid-wrapper {
+  width: 85%;
+  max-width: 1000px;
+  margin: 2em auto 0;
+}
+ 
+/* Style 2: white page box with shadow and rounded top corners */
+#page-wrapper,
+#fluid-wrapper {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 1);
+  border-radius: 12px 12px 0 0;
+}
+ 
+/* Navigation: identical on every page */
+#main-nav ul {
+  list-style: none;
+}
+ 
+#main-nav {
+  float: left;
+  width: 100%;
+  background-color: #1d3557;
+  border-radius: 12px 12px 0 0;
+}
+ 
+#main-nav ul {
+  margin: 0;
+  padding: 0;
+  float: left;
+  position: relative;
+  left: 50%;
+}
+ 
+#main-nav ul li {
+  float: left;
+  position: relative;
+  right: 50%;
+}
+ 
+#main-nav ul li a {
+  display: block;
+  padding: 10px 25px;
+  text-decoration: none;
+  color: #dbeafe;
+}
+ 
+#main-nav ul li a:hover {
+  background-color: #dbeafe;
+  color: #1d3557;
+}
+ 
+#main-content {
+  clear: both;
+  padding: 0 1.5em 1.5em;
+}
+ 
+/* Style 3: centered main heading */
+h1 {
+  text-align: center;
+  color: #1d6fa5;
+  font-size: 3em;
+}
+ 
+/* Style 4: section headings with underline */
+h2 {
+  color: #1d3557;
+  border-bottom: 2px solid #5aa9e6;
+}
+ 
+/* Style 5: pictures with border and padding */
+img {
+  max-width: 50%;
+  height: auto;
+  border: 2px solid #5aa9e6;
+  padding: 5px;
+  background-color: #ffffff;
+}
+ 
+/* Resume page: picture floated to the right */
+.image-r {
+  float: right;
+  width: 150px;
+  margin: 10px 0 10px 20px;
+}
+ 
+/* Small screens: use more of the width on fluid pages */
+@media (max-width: 600px) {
+  #fluid-wrapper {
+    width: 95%;
+  }
+ 
+  img {
+    max-width: 100%;
+  }
+}
+ 
