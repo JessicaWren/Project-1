@@ -124,3 +124,24 @@ img {
     padding: 0 1.5em 1.5em;
   }
 }
+#canvas {
+    width: 700px;
+    height: 500px;
+    background-color: #ccc;
+    margin: 30px auto;
+  }
+questionsButton {
+  display: block;
+  margin: 0 auto 30px;
+  padding: 10px 20px;
+  background-color: #1d3557;
+  color: #dbeafe;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#questionsButton:hover {
+  background-color: #5aa9e6;
+  color: #1d3557;
+}
