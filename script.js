@@ -29,3 +29,11 @@ function initMap() {
     });
   });
 }
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.getElementById("questionsButton");
+  if (button) {
+    button.addEventListener("click", () => {
+      alert("If you have questions, contact me at:\nyouremail@example.com");
+    });
+  }
+});
