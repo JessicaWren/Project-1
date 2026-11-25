@@ -1,39 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
-    <title>Add a Map using HTML</title>
-
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    <script type="module" src="./index.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cities I want to visit!</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/main.js" defer></script>
   </head>
-  <body>
-        <header>
-            <nav>
-                <ul> 
-                    <!-- Navigation is the same on all three html files -->
-                    <li><a href="index.html">Homepage</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="page3.html">Volleyball Profile</a></li>
-                    <li><a href="map.html">Map</a></li>
-                </ul>
-            </nav>
-        </header>
-  
-    <gmp-map
-      center="38.7946,-106.5348"
-      zoom="4"
-      map-id="DEMO_MAP_ID"
-      style="height: 400px"
-    >
-    </gmp-map>
+  <body class="map-page">
+    <header>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="page3.html">Volleyball Profile</a></li>
+          <li><a href="map.html">Map</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <!--
-      The `defer` attribute causes the script to execute after the full HTML
-      document has been parsed. -->
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap"
-      defer
-    ></script>
+    <main class="content">
+      <h1>Cities to visit!</h1>
+      <p>Click the pin to view the city</p>
+      <div id="map"></div>
+      <button type="button" id="questionsButton">Questions</button>
+    </main>
+
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap"></script>
   </body>
 </html>
-  
