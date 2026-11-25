@@ -8,23 +8,25 @@
     <script src="js/script.js" defer></script>
   </head>
   <body class="map-page">
-    <header>
-      <nav id="main-nav">
-        <ul>
-          <li><a href="index.html">Homepage</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="page3.html">Volleyball Profile</a></li>
-          <li><a href="map.html">Map</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div id="fluid-wrapper">
+      <header>
+        <nav id="main-nav">
+          <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="page3.html">Volleyball Profile</a></li>
+            <li><a href="map.html">Map</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <main class="content">
-      <h1>Cities to visit!</h1>
-      <p>Click the pin to view the city</p>
-      <div id="map"></div>
-      <button type="button" id="questionsButton">Questions</button>
-    </main>
+      <main id="main-content">
+        <h1>Cities to visit!</h1>
+        <p>Click the pin to view the city</p>
+        <div id="map"></div>
+        <button type="button" id="questionsButton">Questions</button>
+      </main>
+    </div>
 
     <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap"></script>
   </body>
